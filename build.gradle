@@ -128,3 +128,15 @@ compileQuerydsl.doFirst {
     if(file(querydslDir).exists() )
         delete(file(querydslDir))
 }
+
+jar{
+    enabled = false
+}
+
+bootJar{
+    archivesBaseName = 'gallendar'
+    archiveFileName = 'gallendar.jar'
+    archiveVersion = "0.0.1"
+
+
+}
